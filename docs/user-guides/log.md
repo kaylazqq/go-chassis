@@ -10,7 +10,7 @@
 - logger_level表示日志级别，由低到高分别为 DEBUG, INFO, WARN, ERROR, FATAL 共5个级别，这里设置的级别是日志输出的最低级别，只有不低于该级别的日志才会输出。
 - writers表示日志的输出方式，默认为文件和标准输出。
 - logger_file表示日志输出文件。
-- log_format_text: 默认为false，即设定日志的输出格式为 json。若为true则输出格式为plaintext，类似log4j。建议使用json格式输出的日志。
+- log_format_text: 默认为false，即设定日志的输出格式为 json。若为true则输出格式为plaintext，类似log4j。建议使用json格式输出的日志。另，为true的时候不支持tag输出。
 - rollingPolicy: 默认为size，即根据大小进行日志rotate操作；若配置为daily则基于事件做日志rotate。
 - log_rotate_date: 日志rotate时间配置，单位"day"，范围为(0, 10)。
 - log_rotate_size: 日志rotate文件大小配置，单位"MB",范围为(0,50)。
